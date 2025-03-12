@@ -39,13 +39,24 @@ const Navbar = () => {
         </div>
 
         {/* Sidebar Links */}
-        <div className="flex flex-col mt-4 text-gray-600">
-          <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/">HOME</NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/about">ABOUT</NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/products">PRODUCTS</NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/industriesServed">INDUSTRIES SERVED</NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/contact">CONTACT US</NavLink>
-        </div>
+        <div className="flex flex-col mt-4 text-sm text-gray-600">
+  <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/">
+    Home
+  </NavLink>
+  <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/portfolio">
+    Portfolio
+  </NavLink>
+  <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/about">
+    About
+  </NavLink>
+  <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/careers">
+    Careers
+  </NavLink>
+  <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/contact">
+    Contacts
+  </NavLink>
+</div>
+
       </div>
     </div>
   );
