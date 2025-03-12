@@ -25,11 +25,11 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-14 px-6 sm:px-16 text-gray-800">
+    <div className="py-14 px-6 sm:px-16 text-gray-800">
       <h2 className="text-center text-2xl sm:text-3xl font-bold mb-8">Why Choose Us?</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8">
         {features.map((feature, index) => (
-          <div key={index} className="flex flex-col items-center text-center p-6 bg-white shadow-lg rounded-lg hover:scale-105 transition-all duration-300">
+          <div key={index} className="flex flex-col items-center text-center p-6 bg-gray-100 shadow-lg rounded-lg hover:scale-105 transition-all duration-300">
             {feature.icon}
             <h3 className="text-lg font-semibold mt-4">{feature.title}</h3>
             <p className="text-sm mt-2">{feature.description}</p>
