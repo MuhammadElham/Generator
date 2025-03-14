@@ -12,7 +12,7 @@ const Navbar = () => {
     >
       {/* Logo */}
       <Link to="/">
-        <img src={logo} className="w-20 sm:w-24 md:w-28 lg:w-32" alt="" />
+        <img src={logo} className="w-36 sm:w-40 md:w-44 lg:w-48" alt="" />
       </Link>
 
       {/* Desktop Menu */}

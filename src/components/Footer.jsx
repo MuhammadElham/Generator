@@ -10,7 +10,7 @@ const Footer = () => {
         {/* 1 Col */}
         <div>
           <Link to="/">
-            <img className="mb-5 w-32" src={logo} alt="" />
+            <img className="mb-5 w-48" src={logo} alt="" />
           </Link>
           <p className="w-full md:w-2/3 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum nostrum repellendus vitae neque quis necessitatibus animi autem voluptatibus sunt? Nisi minus, totam porro provident amet aliquam modi maxime fugiat?</p>
         </div>
