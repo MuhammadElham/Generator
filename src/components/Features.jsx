@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaBolt, FaShippingFast, FaHeadset, FaTools } from "react-icons/fa";
 
 const Features = () => {
@@ -26,14 +27,28 @@ const Features = () => {
 
   return (
     <div className="py-14 px-6 sm:px-16 text-gray-800">
-      <h2 className="text-center text-2xl sm:text-3xl font-bold mb-8">Why Choose Us?</h2>
+      <motion.h2
+        className="text-center text-2xl sm:text-3xl font-bold mb-8"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        Why Choose Us?
+      </motion.h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-8">
         {features.map((feature, index) => (
-          <div key={index} className="flex flex-col items-center text-center p-6 bg-gray-100 shadow-lg rounded-lg hover:scale-105 transition-all duration-300">
+          <motion.div
+            key={index}
+            className="flex flex-col items-center text-center p-6 bg-gray-100 shadow-lg rounded-lg hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+          >
             {feature.icon}
             <h3 className="text-lg font-semibold mt-4">{feature.title}</h3>
             <p className="text-sm mt-2">{feature.description}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
