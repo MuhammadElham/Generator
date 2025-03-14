@@ -16,9 +16,13 @@ const AboutGenerator = () => {
         <Link to='/about'><button className="py-3 px-7 text-sm border-2 border-[#e6e6e6]">Read More</button></Link>
       </div>
       {/* part 2 */}
-      <div className="w-1/2">
-        <img className="max-w-full h-auto" src="https://generatorcorner.com/wp-content/uploads/2018/11/sideimage.png" alt="" />
-      </div>
+      <div className="relative w-1/2">
+        {/* Gray Border Frame */}
+            <div className="absolute top-4 left-4 w-4/5 h-full border-[20px] border-gray-300 -z-10"></div>
+        {/* Image */}
+            <img className="max-w-full pt-16 pl-12 h-auto" src="https://generatorcorner.com/wp-content/uploads/2018/11/sideimage.png" alt="Generator" />
+</div>
+
     </div>
   );
 };
