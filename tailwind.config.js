@@ -11,6 +11,10 @@ export default {
         fadeInUp: "fadeInUp 1s ease-out forwards",
         slideInLeft: "slideInLeft 1s ease-out forwards",
       },
+      colors: {
+        primary: "#39B549",
+        dark: "#000000",
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },

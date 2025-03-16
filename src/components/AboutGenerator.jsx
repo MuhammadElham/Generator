@@ -10,14 +10,14 @@ const AboutGenerator = () => {
         <h5 className="text-xs mb-2 font-bold opacity-0 animate-fadeIn">WHAT WE DO</h5>
         <div className="relative">
           <h2 className="text-4xl font-extrabold text-gray-800 pb-2 mb-6 md:mb-10 opacity-0 animate-slideInLeft">ABOUT GENERATOR CORNER</h2>
-          <span className="absolute left-0 -bottom-1 w-12 h-1 bg-orange-400"></span>
+          <span className="absolute left-0 -bottom-1 w-12 h-1 bg-primary"></span>
         </div>
         <Link to="/about">
           <motion.h5
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg mb-3 font-semibold hover:text-orange-400 hover:underline"
+            className="text-lg mb-3 font-semibold hover:text-primary hover:underline"
           >
             Leading Provider of Power Generation Solutions
           </motion.h5>
@@ -27,7 +27,7 @@ const AboutGenerator = () => {
           in generator maintenance, repair, and support services. Our commitment to excellence and customer satisfaction has made us a trusted name...
         </p>
         <Link to="/about">
-          <button className="py-3 px-7 text-sm bg-orange-400 text-white border-2 border-[#e6e6e6] transition-transform duration-300 hover:scale-105 hover:bg-white hover:text-orange-400 hover:border-orange-400">
+          <button className="py-3 px-7 text-sm bg-primary text-white border-2 border-[#e6e6e6] transition-transform duration-300 hover:scale-105 hover:bg-white hover:text-primary hover:border-primary">
             Read More
           </button>
         </Link>
