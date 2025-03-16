@@ -16,20 +16,20 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Menu */}
-      <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
-        <NavLink to="/" className="flex flex-col items-center gap-1">
+      <ul className="hidden sm:flex gap-5 text-sm text-black">
+        <NavLink to="/" className="flex flex-col items-center gap-1 hover:text-[#39B549]">
           HOME
         </NavLink>
-        <NavLink to="/about" className="flex flex-col items-center gap-1">
+        <NavLink to="/about" className="flex flex-col items-center gap-1 hover:text-[#39B549]">
           ABOUT
         </NavLink>
-        <NavLink to="/products" className="flex flex-col items-center gap-1">
+        <NavLink to="/products" className="flex flex-col items-center gap-1 hover:text-[#39B549]">
           PRODUCTS
         </NavLink>
-        <NavLink to="/industriesServed" className="flex flex-col items-center gap-1">
+        <NavLink to="/industriesServed" className="flex flex-col items-center gap-1 hover:text-[#39B549]">
           INDUSTRIES SERVED
         </NavLink>
-        <NavLink to="/contact" className="flex flex-col items-center gap-1">
+        <NavLink to="/contact" className="flex flex-col items-center gap-1 hover:text-[#39B549]">
           CONTACT US
         </NavLink>
       </ul>
@@ -47,24 +47,24 @@ const Navbar = () => {
         {/* Close Button */}
         <div onClick={() => setVisible(false)} className="flex items-center gap-4 cursor-pointer">
           <img className="h-4 rotate-180" src="https://res.cloudinary.com/dmmz8ldz9/image/upload/v1741605634/ecommerce-assets/ilzzwtttfp9q4fp6kib1.png" alt="Close" />
-          <p>Back</p>
+          <p className="text-black">Back</p>
         </div>
 
         {/* Sidebar Links */}
-        <div className="flex flex-col mt-4 text-sm text-gray-600">
-          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/">
+        <div className="flex flex-col mt-4 text-sm text-black">
+          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b hover:text-[#39B549]" to="/">
             HOME
           </NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/about">
+          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b hover:text-[#39B549]" to="/about">
             ABOUT
           </NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/products">
+          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b hover:text-[#39B549]" to="/products">
             PRODUCTS
           </NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/industriesServed">
+          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b hover:text-[#39B549]" to="/industriesServed">
             INDUSTRIES SERVED
           </NavLink>
-          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b" to="/contact">
+          <NavLink onClick={() => setVisible(false)} className="py-3 pl-6 border-b hover:text-[#39B549]" to="/contact">
             CONTACT US
           </NavLink>
         </div>

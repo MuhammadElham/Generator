@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
         <p className="text-xs md:text-base lg:text-lg sm:w-4/5">Depend on our meticulous operation and maintenance services. Enhancing reliability and minimizing downtime for your operations.</p>
         <Link to="/contact">
-          <button className="bg-white text-black hover:bg-black hover:text-white w-auto max-w-fit tracking-wide my-4 transition-all duration-300 ease-in-out text-[10px] px-3 py-2  lg:text-[14px] lg:px-6 lg:py-3">CONTACT US</button>
+          <button className="bg-orange-400 text-white border-2 border-orange-400 hover:bg-white hover:text-orange-400 hover:border-orange-400 w-auto max-w-fit tracking-wide my-4 transition-all duration-300 ease-in-out text-[10px] px-3 py-2  lg:text-[14px] lg:px-6 lg:py-3">CONTACT US</button>
         </Link>
       </div>
     </div>
