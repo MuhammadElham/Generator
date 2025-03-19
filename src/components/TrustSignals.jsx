@@ -10,7 +10,7 @@ const stats = [
 
 const TrustSignals = () => {
   return (
-    <section className="mt-20 py-16 bg-gray-100 text-gray-800">
+    <section className="mt-20 py-14 bg-gray-100 text-gray-800">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <motion.h2 
           className="text-4xl font-extrabold mb-6"

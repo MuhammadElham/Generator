@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Heading from "./Heading";
 
 const logos = [
   "https://generatorcorner.com/wp-content/uploads/2018/11/logo-1-1.png",
@@ -18,9 +19,7 @@ const logos = [
 const Slider = () => {
   return (
     <div className="py-14 bg-white">
-      <h2 className="text-center text-2xl sm:text-3xl font-bold mb-12">
-        Our Partners
-      </h2>
+      <Heading text="Our Partners" />
       <div className="overflow-hidden whitespace-nowrap">
         <motion.div
           className="flex space-x-4 sm:space-x-10"

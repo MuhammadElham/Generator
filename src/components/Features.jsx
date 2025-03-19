@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaBolt, FaShippingFast, FaHeadset, FaTools } from "react-icons/fa";
+import Heading from "./Heading";
 
 const Features = () => {
   const features = [
@@ -27,15 +28,7 @@ const Features = () => {
 
   return (
     <div className="py-14 px-6 sm:px-16 text-gray-800">
-      <motion.h2
-        className="text-center text-2xl sm:text-3xl font-bold mb-8"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        Why Choose Us?
-      </motion.h2>
-
+      <Heading text="Why Choose Us?" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-8">
         {features.map((feature, index) => (
           <motion.div
