@@ -4,10 +4,12 @@ import Heading from "../components/Heading";
 
 const Product = () => {
   return (
-    <div>
+    <>
       <Hero_About bgImg={"https://powerhouseegypt.com/wp-content/uploads/2024/05/generator-room-design-content-image.jpg"} heading={"Explore Our Products"} />
-      <Heading text={"Industry-Leading Brands"} />
-    </div>
+      <div className="py-14">
+        <Heading text={"Industry-Leading Brands"} />
+      </div>
+    </>
   );
 };
 
