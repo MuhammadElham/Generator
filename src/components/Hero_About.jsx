@@ -1,11 +1,11 @@
 import React from "react";
 
-const Hero_About = () => {
+const Hero_About = ({bgImg ,heading}) => {
   return (
     <div
       className="relative text-white h-auto flex flex-col py-24 bg-cover bg-right sm:bg-center -mx-4 sm:-mx-[5vw] md:-mx-[7vw] lg:-mx-[9vw]"
       style={{
-        backgroundImage: `url("https://generatorcorner.com/wp-content/uploads/2018/11/call-to-action-bg.jpg")`,
+        backgroundImage: `url(${bgImg})`,
       }}
     >
       {/* Black Overlay */}
@@ -13,7 +13,7 @@ const Hero_About = () => {
 
       {/* Content */}
       <div className="relative top-[60px] z-10 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-        <h1 className="text-3xl sm:py-3 md:text-4xl lg:text-5xl leading-relaxed font-medium">Leading Provider of Power Generation Solutions</h1>
+        <h1 className="text-3xl sm:py-3 md:text-4xl lg:text-5xl leading-relaxed font-medium">{heading}</h1>
       </div>
     </div>
   );
