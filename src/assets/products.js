@@ -62,7 +62,7 @@ export const product_perkins = {
     perkins_GFE330PLC: Perkins_GFE330PLC,
 
 };
-const productsData = [
+export const productsData = [
     {
       id: "jenbacher",
       name: "Jenbacher",
