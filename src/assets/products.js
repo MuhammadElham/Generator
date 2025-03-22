@@ -38,9 +38,17 @@ import Kohler_KD1250 from "../assets/Products/Kohler/Kohler_KD1250.webp";
 import Cummins_C150D6C from "../assets/Products/Cumins/Cummins_C150D6C.webp";
 import Cummins_GTA50e from "../assets/Products/Cumins/Cummins_GTA50e.webp";
 import Cummins_Quiet_Diesel from "../assets/Products/Cumins/Cummins_Quiet-Diesel.webp";
+// Import Onsite Product
+import Onsite_39_MTU from "../assets/Products/Onsite/Onsite_39_MTU.webp";
+import Onsite_650_kva from "../assets/Products/Onsite/Onsite_650-kva.webp";
+import Onsite_2000_gemset from "../assets/Products/Onsite/Onsite_2000_gemset.webp";
+import Onsite_diesel_generator from "../assets/Products/Onsite/Onsite_diesel-generator.webp";
+import Onsite_Generator_Electrical from "../assets/Products/Onsite/Onsite_Generator-Electrical.webp";
+import Onsite_Rolls_Royce from "../assets/Products/Onsite/Onsite_Rolls-Royce.webp";
 
 // Companies
 export const companies = { jenbacher: Jenbacher, caterpillar: Caterpillar, perkins: Perkins, cummins: Cummins, kohler: Kohler, onsite: onSite };
+
 // Jenbacher Products
 export const product_jenbacher = {
   jenbacher_J208: Jenbacher_J208,
@@ -83,6 +91,15 @@ export const product_cumins = {
   cummins_C150D6C: Cummins_C150D6C,
   cummins_GTA50e: Cummins_GTA50e,
   cummins_Quiet_Diesel: Cummins_Quiet_Diesel,
+};
+// Onsite Products
+export const product_onsite = {
+  onsite_39_MTU: Onsite_39_MTU,
+  onsite_650_kva: Onsite_650_kva,
+  onsite_2000_gemset: Onsite_2000_gemset,
+  onsite_diesel_generator: Onsite_diesel_generator,
+  onsite_Generator_Electrical: Onsite_Generator_Electrical,
+  onsite_Rolls_Royce: Onsite_Rolls_Royce,
 };
 export const productsData = [
   {
@@ -340,6 +357,102 @@ export const productsData = [
         details: "Optimized for fuel efficiency and maximum uptime...",
       },
     ],
-  }
-  
+  },
+  // Cumins
+  {
+    id: "cummins",
+    name: "Cummins",
+    logo: companies.cummins,
+    products: [
+      {
+        id: "c150d6c",
+        name: "Cummins C150D6C",
+        power: "150 kW",
+        image: product_cumins.cummins_C150D6C,
+        description: "Reliable diesel generator for industrial and commercial use.",
+        price: "$35,000",
+        details: "Designed for durability with excellent fuel efficiency...",
+      },
+      {
+        id: "gta50e",
+        name: "Cummins GTA50e",
+        power: "500 kW",
+        image: product_cumins.cummins_GTA50e,
+        description: "High-efficiency generator for large-scale operations.",
+        price: "$90,000",
+        details: "Provides continuous power with advanced cooling system...",
+      },
+      {
+        id: "quietdiesel",
+        name: "Cummins Quiet Diesel",
+        power: "12 kW",
+        image: product_cumins.cummins_Quiet_Diesel,
+        description: "Compact and silent generator for residential and RV use.",
+        price: "$10,000",
+        details: "Low noise operation with automatic voltage regulation...",
+      },
+    ],
+  },
+  // Onsite
+  {
+    id: "onsite",
+    name: "Onsite",
+    logo: companies.onsite,
+    products: [
+      {
+        id: "39_mtu",
+        name: "Onsite 39 MTU",
+        power: "39 kVA",
+        image: product_onsite.onsite_39_MTU,
+        description: "Compact and efficient generator for small businesses.",
+        price: "$12,000",
+        details: "Reliable power backup with low maintenance costs...",
+      },
+      {
+        id: "650_kva",
+        name: "Onsite 650 kVA",
+        power: "650 kVA",
+        image: product_onsite.onsite_650_kva,
+        description: "High-performance diesel generator for industrial use.",
+        price: "$95,000",
+        details: "Engineered for continuous power supply with low emissions...",
+      },
+      {
+        id: "2000_gemset",
+        name: "Onsite 2000 Gemset",
+        power: "2 MW",
+        image: product_onsite.onsite_2000_gemset,
+        description: "Heavy-duty power solution for large-scale operations.",
+        price: "$200,000",
+        details: "Designed for maximum efficiency and long-term durability...",
+      },
+      {
+        id: "diesel_generator",
+        name: "Onsite Diesel Generator",
+        power: "500 kVA",
+        image: product_onsite.onsite_diesel_generator,
+        description: "Durable and fuel-efficient generator for industrial applications.",
+        price: "$80,000",
+        details: "Provides stable and continuous power supply...",
+      },
+      {
+        id: "generator_electrical",
+        name: "Onsite Generator Electrical",
+        power: "750 kVA",
+        image: product_onsite.onsite_Generator_Electrical,
+        description: "Advanced generator with intelligent control systems.",
+        price: "$120,000",
+        details: "Ensures high performance with smart energy management...",
+      },
+      {
+        id: "rolls_royce",
+        name: "Onsite Rolls Royce",
+        power: "1.5 MW",
+        image: product_onsite.onsite_Rolls_Royce,
+        description: "Premium-grade generator with cutting-edge technology.",
+        price: "$180,000",
+        details: "Designed for high uptime and superior efficiency...",
+      },
+    ],
+  }  
 ];
