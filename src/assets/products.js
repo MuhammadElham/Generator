@@ -29,6 +29,16 @@ import Perkins_Cummins500kVA from "../assets/Products/Perkins/Perkins_Cummins500
 import Perkins_DB30GF from "../assets/Products/Perkins/Perkins_DB-30GF.webp";
 import Perkins_DB1000GF from "../assets/Products/Perkins/Perkins_DB-1000GF.webp";
 import Perkins_GFE330PLC from "../assets/Products/Perkins/Perkins_GFE330PLC.webp";
+// Import Kohler Product
+import Kohler_30RCLA from "../assets/Products/Kohler/Kohler_30RCLA.webp";
+import Kohler_860_kW from "../assets/Products/Kohler/Kohler_860 kW.webp";
+import Kohler_1000_KVA from "../assets/Products/Kohler/Kohler_1000 KVA.webp";
+import Kohler_KD1250 from "../assets/Products/Kohler/Kohler_KD1250.webp";
+// Import Cumins Product
+import Cummins_C150D6C from "../assets/Products/Cumins/Cummins_C150D6C.webp";
+import Cummins_GTA50e from "../assets/Products/Cumins/Cummins_GTA50e.webp";
+import Cummins_Quiet_Diesel from "../assets/Products/Cumins/Cummins_Quiet-Diesel.webp";
+
 // Companies
 export const companies = { jenbacher: Jenbacher, caterpillar: Caterpillar, perkins: Perkins, cummins: Cummins, kohler: Kohler, onsite: onSite };
 // Jenbacher Products
@@ -55,95 +65,107 @@ export const product_caterpillar = {
 };
 // Perkins Products
 export const product_perkins = {
-    perkins_Cummins320kVA: Perkins_Cummins320kVA,
-    perkins_Cummins500kVA: Perkins_Cummins500kVA,
-    perkins_DB30GF: Perkins_DB30GF,
-    perkins_DB1000GF: Perkins_DB1000GF,
-    perkins_GFE330PLC: Perkins_GFE330PLC,
-
+  perkins_Cummins320kVA: Perkins_Cummins320kVA,
+  perkins_Cummins500kVA: Perkins_Cummins500kVA,
+  perkins_DB30GF: Perkins_DB30GF,
+  perkins_DB1000GF: Perkins_DB1000GF,
+  perkins_GFE330PLC: Perkins_GFE330PLC,
+};
+// Kohler Products
+export const product_kohler = {
+  kohler_30RCLA: Kohler_30RCLA,
+  kohler_860_kW: Kohler_860_kW,
+  kohler_1000_KVA: Kohler_1000_KVA,
+  kohler_KD1250: Kohler_KD1250,
+};
+// Cumins Products
+export const product_cumins = {
+  cummins_C150D6C: Cummins_C150D6C,
+  cummins_GTA50e: Cummins_GTA50e,
+  cummins_Quiet_Diesel: Cummins_Quiet_Diesel,
 };
 export const productsData = [
-    {
-      id: "jenbacher",
-      name: "Jenbacher",
-      logo: companies.jenbacher,
-      products: [
-        {
-          id: "j208",
-          name: "Jenbacher J 208",
-          power: "330 kW",
-          image: product_jenbacher.jenbacher_J208,
-          description: "High-efficiency gas piston unit for industrial use.",
-          price: "$50,000",
-          details: "This model is designed for high performance with low emissions...",
-        },
-        {
-          id: "j312",
-          name: "Jenbacher J 312",
-          power: "500 kW",
-          image: product_jenbacher.jenbacher_J312,
-          description: "Reliable and efficient gas engine for industrial applications.",
-          price: "$70,000",
-          details: "Optimized for efficiency with robust design...",
-        },
-        {
-          id: "j316",
-          name: "Jenbacher J 316",
-          power: "700 kW",
-          image: product_jenbacher.jenbacher_J316,
-          description: "Durable power solution for high-energy demands.",
-          price: "$90,000",
-          details: "Ensures stability with minimal maintenance...",
-        },
-        {
-          id: "j320",
-          name: "Jenbacher J 320",
-          power: "1 MW",
-          image: product_jenbacher.jenbacher_J320,
-          description: "A next-gen gas engine for heavy industries.",
-          price: "$120,000",
-          details: "Designed for high uptime and fuel efficiency...",
-        },
-        {
-          id: "j412",
-          name: "Jenbacher J 412",
-          power: "1.2 MW",
-          image: product_jenbacher.jenbacher_J412,
-          description: "High-performance engine for industrial energy solutions.",
-          price: "$140,000",
-          details: "Advanced fuel optimization and low maintenance...",
-        },
-        {
-            id: "j416",
-            name: "Jenbacher J 416",
-            power: "1.5 MW",
-            image: product_jenbacher.jenbacher_J416,
-            description: "Powerful and efficient engine for large-scale industries.",
-            price: "$160,000",
-            details: "Engineered for maximum efficiency and longevity...",
-        },
-        {
-            id: "j420_b",
-            name: "Jenbacher J 420 B",
-            power: "1.8 MW",
-            image: product_jenbacher.jenbacher_J420_B,
-            description: "Reliable gas engine with high operational efficiency.",
-            price: "$180,000",
-            details: "Designed for continuous operation with minimal downtime...",
-        },
-        {
-            id: "j612",
-            name: "Jenbacher J 612",
-            power: "2 MW",
-            image: product_jenbacher.jenbacher_J612,
-            description: "Top-tier industrial gas engine with cutting-edge technology.",
-            price: "$200,000",
-            details: "Provides stable power output with superior efficiency...",
-        },
-      ],
-    },
-
-     {
+  {
+    id: "jenbacher",
+    name: "Jenbacher",
+    logo: companies.jenbacher,
+    products: [
+      {
+        id: "j208",
+        name: "Jenbacher J 208",
+        power: "330 kW",
+        image: product_jenbacher.jenbacher_J208,
+        description: "High-efficiency gas piston unit for industrial use.",
+        price: "$50,000",
+        details: "This model is designed for high performance with low emissions...",
+      },
+      {
+        id: "j312",
+        name: "Jenbacher J 312",
+        power: "500 kW",
+        image: product_jenbacher.jenbacher_J312,
+        description: "Reliable and efficient gas engine for industrial applications.",
+        price: "$70,000",
+        details: "Optimized for efficiency with robust design...",
+      },
+      {
+        id: "j316",
+        name: "Jenbacher J 316",
+        power: "700 kW",
+        image: product_jenbacher.jenbacher_J316,
+        description: "Durable power solution for high-energy demands.",
+        price: "$90,000",
+        details: "Ensures stability with minimal maintenance...",
+      },
+      {
+        id: "j320",
+        name: "Jenbacher J 320",
+        power: "1 MW",
+        image: product_jenbacher.jenbacher_J320,
+        description: "A next-gen gas engine for heavy industries.",
+        price: "$120,000",
+        details: "Designed for high uptime and fuel efficiency...",
+      },
+      {
+        id: "j412",
+        name: "Jenbacher J 412",
+        power: "1.2 MW",
+        image: product_jenbacher.jenbacher_J412,
+        description: "High-performance engine for industrial energy solutions.",
+        price: "$140,000",
+        details: "Advanced fuel optimization and low maintenance...",
+      },
+      {
+        id: "j416",
+        name: "Jenbacher J 416",
+        power: "1.5 MW",
+        image: product_jenbacher.jenbacher_J416,
+        description: "Powerful and efficient engine for large-scale industries.",
+        price: "$160,000",
+        details: "Engineered for maximum efficiency and longevity...",
+      },
+      {
+        id: "j420_b",
+        name: "Jenbacher J 420 B",
+        power: "1.8 MW",
+        image: product_jenbacher.jenbacher_J420_B,
+        description: "Reliable gas engine with high operational efficiency.",
+        price: "$180,000",
+        details: "Designed for continuous operation with minimal downtime...",
+      },
+      {
+        id: "j612",
+        name: "Jenbacher J 612",
+        power: "2 MW",
+        image: product_jenbacher.jenbacher_J612,
+        description: "Top-tier industrial gas engine with cutting-edge technology.",
+        price: "$200,000",
+        details: "Provides stable power output with superior efficiency...",
+      },
+    ],
+  },
+  // Caterpillar
+  {
     id: "caterpillar",
     name: "Caterpillar",
     logo: companies.caterpillar,
@@ -222,7 +244,7 @@ export const productsData = [
       },
     ],
   },
-
+  // Perkins
   {
     id: "perkins",
     name: "Perkins",
@@ -275,5 +297,49 @@ export const productsData = [
       },
     ],
   },
-  ];
+  // Kohler
+  {
+    id: "kohler",
+    name: "Kohler",
+    logo: companies.kohler,
+    products: [
+      {
+        id: "30rcla",
+        name: "Kohler 30RCLA",
+        power: "30 kW",
+        image: product_kohler.kohler_30RCLA,
+        description: "Compact and reliable generator for residential and light commercial use.",
+        price: "$12,000",
+        details: "Offers automatic backup power with quiet operation...",
+      },
+      {
+        id: "860kw",
+        name: "Kohler 860 kW",
+        power: "860 kW",
+        image: product_kohler.kohler_860_kW,
+        description: "High-performance diesel generator for industrial applications.",
+        price: "$100,000",
+        details: "Designed for continuous operation with fuel efficiency...",
+      },
+      {
+        id: "1000kva",
+        name: "Kohler 1000 KVA",
+        power: "1 MW",
+        image: product_kohler.kohler_1000_KVA,
+        description: "Heavy-duty power backup solution for large-scale industries.",
+        price: "$140,000",
+        details: "Reliable generator with advanced monitoring systems...",
+      },
+      {
+        id: "kd1250",
+        name: "Kohler KD1250",
+        power: "1.25 MW",
+        image: product_kohler.kohler_KD1250,
+        description: "Premium-grade generator for high-demand applications.",
+        price: "$180,000",
+        details: "Optimized for fuel efficiency and maximum uptime...",
+      },
+    ],
+  }
   
+];
